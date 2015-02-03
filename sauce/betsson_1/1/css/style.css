@@ -1,0 +1,132 @@
+html, body, header ul {
+    /* some browsers add margin through user agent */
+    margin: 0;
+}
+header ul, header li {
+    list-style: inside none;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #333333;
+}
+header {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+header > nav {
+    background-color: #B70000;
+    height: 45px;
+    min-width: 100%; /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#D90606, #6C0000); /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(#D90606, #6C0000); /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(#D90606, #6C0000); /* Standard syntax */
+    background: linear-gradient(#D90606, #6C0000);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 1);
+}
+header > nav > ul > li {
+    list-style: inside none;
+    float: left;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 45px;
+}
+header > nav > ul > li:not(.divider):hover {
+    cursor: pointer; /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#C90000, #5D0000); /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(#C90000, #5D0000); /* For Firefox 3.6 to 15 */
+    background: -moz-linear-gradient(#C90000, #5D0000); /* Standard syntax */
+    background: linear-gradient(#C90000, #5D0000);
+}
+header > nav > ul > li:first-child > a {
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px;
+    border-left: none !important;
+}
+header > nav > ul > .divider {
+    border-right: 1px solid rgba(8, 8, 8, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: none;
+    border-top: none;
+    clear: none;
+    height: 45px;
+    width: 0;
+}
+
+/* general a's in li's */
+header > nav li > a {
+    display: block;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+header > nav > ul > li > a {
+    text-align: center;
+    color: white;
+    padding: 0 25px;
+}
+header > nav > ul > li li > a {
+    text-align: left;
+    color: black;
+    padding: 0 15px;
+}
+header > nav > ul {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto !important;
+    display: inline;
+    float: left;
+}
+
+/* Sub menu */
+header > nav > ul > li.has-sub.active > ul {
+    display: block;
+}
+
+/* first dropdown */
+header > nav > ul li > ul {
+    display: none;
+    width: auto;
+    position: absolute;
+    top: 45px;
+    background: #F9EFC2;
+    padding: 0;
+    width: 150px;
+}
+
+/* sub menu for dropdown */
+header > nav > ul ul ul {
+    position: absolute;
+}
+header > nav > ul ul li:hover {
+    background-color: #F7E391;
+}
+header > nav > ul ul li.active > ul {
+    left: 101%;
+    top: 0;
+    display: block;
+}
+header > nav > ul li > ul li {
+    display: block;
+    list-style: inside none;
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* End Submenu */
