@@ -1,66 +1,85 @@
+body {
+  background-color: black;
+}
+.frame {
+  margin-top: 10%;
+}
 .betsson-carousel {
-    width: 452px;
-    height: 187px;
-    position: relative;
-    perspective: 1000px;
-    margin: 0 auto;
+  width: 452px;
+  height: 187px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
 }
 .betsson-carousel > .container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-    -webkit-animation-direction: normal;
-    /*auto animation*/
-    
-    -webkit-animation: cycle 10s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-direction: normal; /* auto animation */
+  -webkit-animation: cycle 10s linear infinite;
 }
 .betsson-carousel > .container.a {
-    -webkit-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
 }
 .betsson-carousel > .container.b {
-    -webkit-transform: rotateX(-120deg);
+  -webkit-transform: rotateX(-120deg);
 }
 .betsson-carousel > .container.c {
-    -webkit-transform: rotateX(-240deg);
+  -webkit-transform: rotateX(-240deg);
 }
 .betsson-carousel > .container .side {
-    width: 452px;
-    height: 187px;
-    display: block;
-    position: absolute;
-    text-align: center;
-    line-height: 48px;
+  width: 452px;
+  height: 187px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  line-height: 48px;
 }
 .betsson-carousel .side.a {
-    -webkit-transform: rotateX(0deg) translateZ(53px);
+  -webkit-transform: rotateX(0deg) translateZ(53px);
 }
 .betsson-carousel .side.b {
-    -webkit-transform: rotateX(-120deg) translateZ(53px);
+  -webkit-transform: rotateX(-120deg) translateZ(53px);
 }
 .betsson-carousel .side.c {
-    -webkit-transform: rotateX(-240deg) translateZ(53px);
+  -webkit-transform: rotateX(-240deg) translateZ(53px);
 }
 @-webkit-keyframes cycle {
-    0% {
-        -webkit-transform: rotateX(0deg);
-    }
-    28.5714% {
-        -webkit-transform: rotateX(0deg);
-    }
-    33.3333% {
-        -webkit-transform: rotateX(-120deg);
-    }
-    61.9047% {
-        -webkit-transform: rotateX(-120deg);
-    }
-    66.6666% {
-        -webkit-transform: rotateX(-240deg);
-    }
-    95.238% {
-        -webkit-transform: rotateX(-240deg);
-    }
-    100% {
-        -webkit-transform: rotateX(-360deg);
-    }
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+  28.5714% {
+    -webkit-transform: rotateX(0deg);
+  }
+  33.3333% {
+    -webkit-transform: rotateX(-120deg);
+  }
+  61.9047% {
+    -webkit-transform: rotateX(-120deg);
+  }
+  66.6666% {
+    -webkit-transform: rotateX(-240deg);
+  }
+  95.238% {
+    -webkit-transform: rotateX(-240deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+  }
+}
+.betsson-carousel .control.circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px white solid;
+  position: absolute;
+  top: calc(50% - 15px);
+  cursor: pointer;
+}
+.betsson-carousel .control.circle.left {
+  left: -45px;
+}
+.betsson-carousel .control.circle.right {
+  right: -45px;
 }
