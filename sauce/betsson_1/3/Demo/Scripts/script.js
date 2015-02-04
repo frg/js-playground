@@ -1,8 +1,7 @@
 ﻿
 var tags = null;
+var xhrStatusELement = $("#xhrStatus");
 $("#tags").keyup(function () {
-    
-
     clearTimeout(tags);
     tags = setTimeout(function () {
         if ($("#tags").val().length < 3) {
@@ -13,24 +12,27 @@ $("#tags").keyup(function () {
 
         $("#link").html(URL).attr("href", URL);
 
+        xhrStatusELement.html('Requesting');
         $.getJSON(URL, function (data) {
-            var container = $("#container");
-            container.html("");
+            xhrStatusELement.html('Retreiving');
+
+            var container = $("#container").html("");
 
             $.each(data, function () {
-                var thumb = $("<div>");
+                var thumb = $("<div>").addClass('item');
                 var image = $("<img>")
                     .attr("src", this.ImageUrl);
 
-                var title = $("<span>")
+                var title = $("<p>")
                     .html(this.Title);
 
                 thumb.append(title);
                 thumb.append(image);
 
+                image.fadeIn("slow");
 
                 container.append(thumb);
             });
         });
     }, 250);
-})
+});

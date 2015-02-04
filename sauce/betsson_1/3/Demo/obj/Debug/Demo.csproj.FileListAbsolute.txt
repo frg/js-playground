@@ -28,3 +28,28 @@ C:\Users\sied\Documents\Visual Studio 2012\Projects\Screening\Demo\bin\System.We
 C:\Users\sied\Documents\Visual Studio 2012\Projects\Screening\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
 C:\Users\sied\Documents\Visual Studio 2012\Projects\Screening\Demo\obj\Debug\Screening.dll
 C:\Users\sied\Documents\Visual Studio 2012\Projects\Screening\Demo\obj\Debug\Screening.pdb
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Screening.dll.config
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Screening.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Screening.pdb
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Antlr3.Runtime.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\EntityFramework.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Microsoft.Web.Infrastructure.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Newtonsoft.Json.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Mvc.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Optimization.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Providers.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Razor.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.Deployment.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.Razor.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\WebGrease.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\EntityFramework.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\Newtonsoft.Json.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Mvc.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.Razor.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.Deployment.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\bin\System.Web.WebPages.Razor.xml
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\obj\Debug\Screening.dll
+C:\wamp\www\js-playground\sauce\betsson_1\3\Demo\obj\Debug\Screening.pdb
