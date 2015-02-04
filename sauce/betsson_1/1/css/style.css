@@ -130,3 +130,42 @@ header > nav > ul li > ul li {
 }
 
 /* End Submenu */
+
+/*animation*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+            transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+            transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInLeft {
+      -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
