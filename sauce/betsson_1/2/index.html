@@ -9,10 +9,10 @@
         
         <div class="frame">
             <section id="carousel" class="betsson-carousel">
-                <div class="container">
-                    <div class="side a"><img src='img/promo1.jpg' /></div>
-                    <div class="side b"><img src='img/promo2.jpg' /></div>
-                    <div class="side c"><img src='img/promo3.jpg' /></div>
+                <div class="container" data-rotation="0">
+                    <div class="side"><img src='img/promo1.jpg' /></div>
+                    <div class="side"><img src='img/promo2.jpg' /></div>
+                    <div class="side"><img src='img/promo3.jpg' /></div>
                 </div>
                 <div class="control circle left"></div>
                 <div class="control circle right"></div>
@@ -20,9 +20,14 @@
         </div>
 
         <script src="js/jquery-1.11.2.min.js"></script>
-        <!-- <script src="js/script.js"></script> -->
+        <script src="js/script.js"></script>
         <script>
-                                // $('div').betssonCarousel({});
+        
+            $('#carousel').betssonCarousel({
+                autoSlide: true,
+                autoSlideMs: 1000,
+                hoverPause: true
+            });
                                 
         </script>
     </body>
