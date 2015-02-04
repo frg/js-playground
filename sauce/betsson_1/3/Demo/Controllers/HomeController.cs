@@ -17,9 +17,24 @@ namespace Demo.Controllers
             return View();
         }
 
-        public ActionResult GetImages(string tags) { 
+        public ActionResult GetImages(string tags, bool cached = true) {
+            // keeps a more formatted data structure for front end
+            Dictionary<string, object> data = new Dictionary<string, object>();
+
+            if (cached)
+            {
+                var flickrCacheableRepository = new FlickrCacheableRepository();
+                data.Add("data", flickrCacheableRepository.GetImagesByTags(tags));
+                // mark as cached
+                data.Add("cached", 1);
+                return Json(data, JsonRequestBehavior.DenyGet);
+            }
+
             var flickrRepository = new FlickrRepository();
-            return Json(flickrRepository.GetImagesByTags(tags), JsonRequestBehavior.AllowGet);
+            data.Add("data", flickrRepository.GetImagesByTags(tags));
+            // mark as not cached
+            data.Add("cached", 0);
+            return Json(data, JsonRequestBehavior.DenyGet);
         }
 
     }

@@ -5,12 +5,19 @@
 <h2>Index</h2>
 @Html.TextBox("tags",null, new { placeholder = "Type in your search"})
 <small id="xhrStatus"></small>
+
+<br>
+<input type="checkbox" name="getCached" value="1"> Get cached data?<br>
+
 <h2>Share</h2>
 <div>
     <a id="link" href=""></a>
 </div>
 
 <h2>Pictures</h2>
+
+<br /><br />
+<small id="isCached"></small>
 <div id="container">
 
 </div>
