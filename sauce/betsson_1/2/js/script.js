@@ -24,7 +24,7 @@
         
         var timer;
         var autoRotate = function(enabled) {
-            if (enabled) {
+            if (enabled && settings.autoSlide) {
                 timer = setInterval(function(){
                     rotate(1);
                 }, settings.autoSlideMs);
@@ -33,10 +33,9 @@
             }
         }
 
-        //check if auto sliding is enabled
-        if (settings.autoSlide) {
-            autoRotate(1);
-        }
+        // enable auto rotation if enabled
+        autoRotate(1);
+
         //check if hover pause is enabled
         if (settings.hoverPause) {
             this.hover(function() {
