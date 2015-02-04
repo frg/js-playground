@@ -6,52 +6,13 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header id="header" class="">
-            <!-- <nav>
-                <ul>
-                    <li>
-                        <a href="">Start</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="">Sportsbook</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class='has-sub active'>
-                        <a href='#'>Casino</a>
-                        <ul>
-                            <li class='has-sub active'>
-                                <a href='#'>Live Casino</a>
-                                <ul>
-                                    <li>
-                                        <a href='#'>Sub dasdasdProduct</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Sub Pasdsaroduct</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class='has-sub'>
-                                <a href='#'>Casino</a>
-                                <ul>
-                                    <li>
-                                        <a href='#'>Sub Product</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Sub Product</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="divider"></li>
-                </ul>
-            </nav> -->
-        </header>
+        <header id="header"></header>
+        
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/script.js"></script>
 
         <script>
+        // menu supplied through assignment
         var menu = [{
             title: "Start",
             href: "/"
@@ -96,7 +57,7 @@
             href: "/scratch"
         }];
 
-        // id selector is much faster
+        // init of menu
 		$('#header').betssonMenu({
 			menuItems: menu,
 			mouseEnterDelay: 100,

@@ -1,5 +1,6 @@
 (function($) {
     $.fn.betssonMenu = function(options) {
+        // default menu
         var menu = [{
             title: "Default",
             href: "/"
@@ -39,6 +40,7 @@
             mouseEnterClass: ''
         }, options);
 
+        // init main structure
         var initStructure = function () {
             var init = '<nav>';
             var divider = '<li class="divider"></li>';
@@ -49,12 +51,16 @@
             return init;
         };
 
+        // creates parent menu item list
         var createMenuItems = function(items, divider){
             var a = '<ul>';
 
             $.each(items, function( index, value ) {
                 a += createMenuItem(value);
                 
+                // if desired a devider is supplied
+                // this is done for the reason of inseting a divider
+                // in the main menu.
                 if (typeof divider !== "undefined") {
                    a += divider; 
                 }
@@ -64,6 +70,7 @@
             return a;
         };
 
+        // creates a single menu item
         var createMenuItem = function (value) {
             var element ='<li';
 
@@ -80,10 +87,12 @@
             return element;
         };
         
+        // return "this" for chaining
         return this.html(function(){
             var elements = $(initStructure());
             var subMenus = $(elements).find("li.has-sub");
 
+            // handles hover on and hover off
             subMenus.hover(function(){
                 // hover on
                 var self = $(this);
@@ -93,6 +102,8 @@
                 var timeout = self.data('hoveroff');
                 if(timeout) clearTimeout(timeout);
 
+                // settimeout is store conveniently in a dataattribute for later use
+                // consider this tactic as a sort of "key => value" scenario
                 self.data('hoveron', setTimeout(function(){ 
                                                     self.addClass('active')
                                                         .addClass(settings.mouseEnterClass);
@@ -106,13 +117,12 @@
                 var timeout = $(this).data('hoveron');
                 if(timeout) clearTimeout(timeout);
 
+                // as explained above, this is to store the function instance for later use
                 self.data( 'hoveroff', setTimeout(function(){ 
                                                         self.removeClass('active')
                                                             .removeClass(settings.mouseEnterClass);; 
                                                     }, settings.mouseLeaveDelay));
             });
-
-            return elements;
         });
     }
 }(jQuery));

@@ -10,6 +10,7 @@
 
         var container = this.find('.container');
         var rotate = function(direction) {
+            // keeps track of current rotation calue
             var rotation = parseInt(container.attr('data-rotation'));
             if (direction == 1) {
                 rotation -= 120;
@@ -23,8 +24,10 @@
         }
         
         var timer;
+        // init of auto rotation / auto play
         var autoRotate = function(enabled) {
             if (enabled && settings.autoSlide) {
+                // if is enabled in settings
                 timer = setInterval(function(){
                     rotate(1);
                 }, settings.autoSlideMs);
@@ -47,6 +50,7 @@
             });
         }
 
+        // next and previous controls
         this.on('click', '.control.left', function(){
             rotate(-1);
         });
@@ -54,6 +58,7 @@
             rotate(1);
         });
 
+        //return instance for chaining if needed
         return this;
     }
 }(jQuery));
