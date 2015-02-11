@@ -90,7 +90,7 @@
         // return "this" for chaining
         return this.html(function(){
             var elements = $(initStructure());
-            var subMenus = $(elements).find("li.has-sub");
+            var subMenus = elements.find("li.has-sub");
 
             // handles hover on and hover off
             subMenus.hover(function(){
@@ -123,6 +123,8 @@
                                                             .removeClass(settings.mouseEnterClass);; 
                                                     }, settings.mouseLeaveDelay));
             });
+
+            return elements;
         });
     }
 }(jQuery));
